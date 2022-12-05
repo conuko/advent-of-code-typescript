@@ -1,7 +1,6 @@
 # Advent of Code 2022 Typescript
 
 Repository for the solutions of the [Advent of Code Challenge 2022](https://adventofcode.com/)
-I cloned this repo from [Haugen](https://github.com/Haugen/aoc-ts) and modified it to my needs.
 
 ## Usage
 
