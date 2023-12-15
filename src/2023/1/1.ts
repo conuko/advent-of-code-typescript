@@ -23,7 +23,6 @@ const getResultNumbers = (inputArray: string[]) => {
 		!Number.isNaN(result) && numbers.push(result);
 	});
 
-	console.log(numbers);
 	return numbers;
 };
 
