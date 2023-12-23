@@ -2,11 +2,11 @@ import fs from 'fs';
 
 const input = fs.readFileSync('input.txt', 'utf8');
 
-const isSymbol = (str: string): boolean => {
+export const isSymbol = (str: string): boolean => {
 	return str !== '.';
 };
 
-const isNumber = (str: string): boolean => {
+export const isNumber = (str: string): boolean => {
 	return !Number.isNaN(parseInt(str));
 };
 
@@ -14,7 +14,7 @@ const isNumber = (str: string): boolean => {
  * Checks if number at (x0, y), (x1, y) is touching matching symbol
  * @returns [x, y] of a first matching symbol, null if no matching touches
  */
-const findTouch = (
+export const findTouch = (
 	rows: string[][],
 	y: number,
 	x0: number,
