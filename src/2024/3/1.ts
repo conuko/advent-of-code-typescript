@@ -18,17 +18,15 @@ const sumValidMultiplications = (input: string): number => {
 	while ((match = mulRegex.exec(input)) !== null) {
 		const [, num1Str, num2Str] = match;
 
-		// Convert strings to numbers
 		const num1 = parseInt(num1Str, 10);
 		const num2 = parseInt(num2Str, 10);
 
-		// Add the product to our sum
+		// Add the product to the sum
 		sum += num1 * num2;
 	}
 
 	return sum;
 };
 
-// Calculate and log the result
 const result = sumValidMultiplications(input);
 console.log(`Sum of all valid multiplications: ${result}`);
